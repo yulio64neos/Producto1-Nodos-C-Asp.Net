@@ -1,0 +1,6 @@
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\RamaNodoPC\bin\Debug\RamaNodoPC.dll
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\RamaNodoPC\bin\Debug\RamaNodoPC.pdb
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\RamaNodoPC\obj\Debug\RamaNodoPC.csproj.AssemblyReference.cache
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\RamaNodoPC\obj\Debug\RamaNodoPC.csproj.CoreCompileInputs.cache
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\RamaNodoPC\obj\Debug\RamaNodoPC.dll
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\RamaNodoPC\obj\Debug\RamaNodoPC.pdb
