@@ -1,0 +1,9 @@
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\CapaDal_PC\bin\Debug\CapaDal_PC.dll
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\CapaDal_PC\bin\Debug\CapaDal_PC.pdb
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\CapaDal_PC\bin\Debug\RamaNodoPC.dll
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\CapaDal_PC\bin\Debug\RamaNodoPC.pdb
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\CapaDal_PC\obj\Debug\CapaDal_PC.csproj.AssemblyReference.cache
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\CapaDal_PC\obj\Debug\CapaDal_PC.csproj.CoreCompileInputs.cache
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\CapaDal_PC\obj\Debug\CapaDal_PC.csproj.CopyComplete
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\CapaDal_PC\obj\Debug\CapaDal_PC.dll
+C:\Users\julio\Documents\UTP\Memo\Producto1-Nodos-C-Asp.Net\CapaDal_PC\obj\Debug\CapaDal_PC.pdb

@@ -45,16 +45,22 @@ namespace CapaDal_PC
 
         public string[] MostrarList()
         {
+            //Declaro una variable de tipo arreglo string
             string[] result = new string[countNodes];
+            //Creo un objeto temporal
             NodoLista r1 = null;
+            //Creo una variable con inicializador desde 0
             int c = 0;
+            //R1 se asigna con el ancla
             r1 = Ancla;
+            //Si r1 es diferente de nulo, entonces avanza
             while(r1 != null)
             {
                 result[c] = r1.info.ShowCells();
                 c++;
                 r1 = r1.sig;
             }
+            //El resultado al mostrar la lista
             return result;
         }
 
