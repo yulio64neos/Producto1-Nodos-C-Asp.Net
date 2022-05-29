@@ -19,5 +19,12 @@ namespace CapaBL_PC
             return objDAL.Agregar(nuevo);
             //Recordemos que si vamos a agrgar un nuevo NODO, en sí, es todo el NODO, no un simple objeto
         }
+
+        //Se crea un metodo que retorna un arreglo
+        public string[] MostrarPC()
+        {
+            //Se invoca el método MostrarList sin necesidad de brindarle parámetros
+            return objDAL.MostrarList();
+        }
     }//Fin de la clase
 }
