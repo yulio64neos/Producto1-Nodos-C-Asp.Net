@@ -23,5 +23,10 @@ namespace RamaNodoPC
         //Aquí se definirán las propiedades de las imágenes
         /*public string img1 { set; get; }
         public string img2 { set; get; }*/
+
+        public string ShowCells()
+        {
+            return "PC " + "Clave: " + this.clave + "Categoria " + this.categoria + "Marca " + this.marca + "Modelo " + this.modelo + "Serie " + this.serie + "Descripcioón " + this.desc;
+        }
     }//Fin de la clase
 }
