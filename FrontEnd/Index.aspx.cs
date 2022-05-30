@@ -19,5 +19,30 @@ namespace FrontEnd
                 bl = (ClassBl)Session["bl"];
             }
         }
+
+        protected void txtInsertar_Click(object sender, EventArgs e)
+        {
+            bl.InsertPC(new RamaNodoPC.NodoLista(new RamaNodoPC.Computers()
+            {
+                clave = int.Parse(txtClave.Text),
+                categoria = txtCate.Text,
+                marca = txtMarca.Text,
+                modelo = txtModel.Text,
+                serie = txtSerie.Text,
+                desc = txtDesc.Text
+            }));
+            Session["bl"] = bl;
+        }
+
+        protected void txtMostrar_Click(object sender, EventArgs e)
+        {
+            listNodos.Items.Clear();
+            string[] arrePC = null;
+            arrePC = bl.MostrarPC();
+            foreach (string z in arrePC)
+            {
+                listNodos.Items.Add(z);
+            }
+        }
     }
 }
