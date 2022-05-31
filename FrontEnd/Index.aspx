@@ -26,7 +26,7 @@
                                 <a class="nav-link" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Insertar</a>
+                                <a class="nav-link" href="#inse">Insertar</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Buscar</a>
@@ -136,14 +136,34 @@
             <!--Fin de la inserción-->
             <!--Mostrar Lista-->
             <div class="lista">
-                <p>Listado de los elementos</p>
-                <asp:ListBox ID="listNodos" runat="server" Width="1202px"></asp:ListBox>
+                <div class="mb-3">
+                    <p>Listado de los elementos</p>
+                    <asp:ListBox ID="listNodos" runat="server" Width="1202px"></asp:ListBox>
+                </div>                
             </div>
             <!--Fin de la etiqueta Lista-->
+            <!--Buscar nodo-->
+            <div class="busq">
+                <div class="mb-3">
+                    <label class="form-label">Buscar Nodo</label>
+                    <asp:TextBox ID="txtBusClav" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:Button ID="btnBuscar" runat="server" Text="Buscar Nodo"  CssClass="btn btn-light mt-2" OnClick="btnBuscar_Click"/>
+                </div>
+            </div>
+            <!--Fin de la busqueda -->
+            <!--Eliminar nodo -->
+            <div class="elim">
+                <div class="mb-3">
+                    <label class="form-label">Eliminar Nodo</label>
+                    <asp:TextBox ID="txtElimNodo" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:Button ID="btnEliminar" runat="server" Text="Eliminar Nodo" CssClass="btn btn-danger mt-2" OnClick="btnEliminar_Click" />
+                </div>
+            </div>
+            <!--Fin del eliminado -->
         </div>
     </form>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
