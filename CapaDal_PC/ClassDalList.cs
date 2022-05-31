@@ -127,6 +127,7 @@ namespace CapaDal_PC
                     encontrado = null;
                     salida = "Eliminado correctamente NICE VERY NICE";
                 }
+                countNodes--;
             }
             else
             {
