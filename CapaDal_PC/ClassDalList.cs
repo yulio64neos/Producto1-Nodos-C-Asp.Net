@@ -64,5 +64,78 @@ namespace CapaDal_PC
             return result;
         }
 
+        //Buscando el nodo
+        public NodoLista Buscar(int cla)
+        {
+            NodoLista r1 = null;
+            NodoLista piedrita = null;
+            r1 = Ancla;
+            while(r1 != null)
+            {
+                if(r1.info.clave == cla)
+                {
+                    piedrita = r1;
+                }
+                r1 = r1.sig;
+            }
+            return piedrita;
+        }//Fin del método
+
+        //Método para ubicar el anterior nodo
+        public NodoLista AnteriorElement(int cla)
+        {
+            NodoLista r1 = null;
+            NodoLista antes = null;
+            NodoLista antesBuscado = null;
+
+            r1 = Ancla;
+            antes = r1;
+            while(r1 != null)
+            {
+                if(r1.info.clave == cla)
+                {
+                    antesBuscado = antes;
+                }
+                antes = r1;
+
+                //Esta 
+                r1 = r1.sig;
+            }
+            return antesBuscado;
+        }//Fin del método
+
+        //Método para eliminar nodo
+        public string deleteNode(int cla)
+        {
+            NodoLista encontrado = null;
+            NodoLista anterior = null;
+            string salida = "";
+            encontrado = Buscar(cla);
+            if(encontrado != null)
+            {
+                if(encontrado == Ancla)
+                {
+                    Ancla = encontrado.sig;
+                    encontrado.sig = null;
+                    salida = "Eliminando al 1er nodo juas jusa juas";
+                }
+                else
+                {
+                    anterior = AnteriorElement(cla);
+                    anterior.sig = encontrado.sig;
+                    encontrado.sig = null;
+                    encontrado = null;
+                    salida = "Eliminado correctamente NICE VERY NICE";
+                }
+            }
+            else
+            {
+                salida = "No se puede eliminar algo que YA NO EXISTE KRNAL";
+            }
+            return salida;
+        }//Fin del método
+        
+
+
     }//Fin de la clase
 }

@@ -26,5 +26,26 @@ namespace CapaBL_PC
             //Se invoca el método MostrarList sin necesidad de brindarle parámetros
             return objDAL.MostrarList();
         }
+
+        public string BuscarPC(int clv)
+        {
+            string salida = "";
+            NodoLista piedritaPUES = null;
+            piedritaPUES = objDAL.Buscar(clv);
+            if(piedritaPUES == null)
+            {
+                salida = "No se encontró ese OBJECT";
+            }
+            else
+            {
+                salida = "Encontrado " + piedritaPUES.info.ShowCells();
+            }
+            return salida;
+        }
+
+        public string EliminarPC(int clv)
+        {
+            return objDAL.deleteNode(clv);
+        }
     }//Fin de la clase
 }

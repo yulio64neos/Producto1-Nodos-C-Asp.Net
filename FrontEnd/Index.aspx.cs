@@ -22,6 +22,7 @@ namespace FrontEnd
 
         protected void txtInsertar_Click(object sender, EventArgs e)
         {
+            //Aquí llamo el método insertar PC, trayendo los parámetros del proyecto llamado RamaNodoPC
             bl.InsertPC(new RamaNodoPC.NodoLista(new RamaNodoPC.Computers()
             {
                 clave = int.Parse(txtClave.Text),
@@ -34,6 +35,7 @@ namespace FrontEnd
             Session["bl"] = bl;
         }
 
+        //Muestro mis nodos
         protected void txtMostrar_Click(object sender, EventArgs e)
         {
             listNodos.Items.Clear();
